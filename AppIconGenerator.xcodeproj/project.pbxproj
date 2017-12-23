@@ -13,6 +13,16 @@
 		EC43D2851FE83AD50046D6B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC43D2831FE83AD50046D6B8 /* Main.storyboard */; };
 		EC43D2911FE83AD50046D6B8 /* AppIconGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC43D2901FE83AD50046D6B8 /* AppIconGeneratorTests.swift */; };
 		EC43D29C1FE83AD50046D6B8 /* AppIconGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC43D29B1FE83AD50046D6B8 /* AppIconGeneratorUITests.swift */; };
+		EC43D2AA1FE83F700046D6B8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC43D2A91FE83F700046D6B8 /* MainView.swift */; };
+		EC43D2D11FE8439E0046D6B8 /* HaskellSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC43D2CF1FE843910046D6B8 /* HaskellSwift.framework */; };
+		EC43D2D21FE8439E0046D6B8 /* HaskellSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC43D2CF1FE843910046D6B8 /* HaskellSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC4E3A181FEA5667004AC712 /* ImageMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4E3A171FEA5667004AC712 /* ImageMetaData.swift */; };
+		EC542DD71FE96330007D9BDA /* IconGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC542DD61FE96330007D9BDA /* IconGenerator.swift */; };
+		EC542DD91FE98057007D9BDA /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = EC542DD81FE98057007D9BDA /* add.png */; };
+		EC77BDC81FEABA11004E1A43 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77BDC71FEABA11004E1A43 /* Asset.swift */; };
+		EC77BDCA1FEABB75004E1A43 /* ImageConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77BDC91FEABB75004E1A43 /* ImageConverter.swift */; };
+		EC77BDCC1FEABE95004E1A43 /* ImageValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77BDCB1FEABE95004E1A43 /* ImageValidator.swift */; };
+		EC77BDCE1FEAC06E004E1A43 /* Dragging.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77BDCD1FEAC06E004E1A43 /* Dragging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +42,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EC43D2D31FE8439E0046D6B8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC43D2D21FE8439E0046D6B8 /* HaskellSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EC43D27A1FE83AD50046D6B8 /* AppIconGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIconGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC43D27D1FE83AD50046D6B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,13 +63,22 @@
 		EC43D2811FE83AD50046D6B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC43D2841FE83AD50046D6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC43D2861FE83AD50046D6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC43D2871FE83AD50046D6B8 /* AppIconGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppIconGenerator.entitlements; sourceTree = "<group>"; };
 		EC43D28C1FE83AD50046D6B8 /* AppIconGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppIconGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC43D2901FE83AD50046D6B8 /* AppIconGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconGeneratorTests.swift; sourceTree = "<group>"; };
 		EC43D2921FE83AD50046D6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC43D2971FE83AD50046D6B8 /* AppIconGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppIconGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC43D29B1FE83AD50046D6B8 /* AppIconGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconGeneratorUITests.swift; sourceTree = "<group>"; };
 		EC43D29D1FE83AD50046D6B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC43D2A91FE83F700046D6B8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		EC43D2CF1FE843910046D6B8 /* HaskellSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HaskellSwift.framework; sourceTree = "<group>"; };
+		EC4E3A171FEA5667004AC712 /* ImageMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMetaData.swift; sourceTree = "<group>"; };
+		EC542DD61FE96330007D9BDA /* IconGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconGenerator.swift; sourceTree = "<group>"; };
+		EC542DD81FE98057007D9BDA /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		EC542DDA1FE99070007D9BDA /* AppIconSetGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppIconSetGenerator.entitlements; sourceTree = "<group>"; };
+		EC77BDC71FEABA11004E1A43 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		EC77BDC91FEABB75004E1A43 /* ImageConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConverter.swift; sourceTree = "<group>"; };
+		EC77BDCB1FEABE95004E1A43 /* ImageValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageValidator.swift; sourceTree = "<group>"; };
+		EC77BDCD1FEAC06E004E1A43 /* Dragging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC43D2D11FE8439E0046D6B8 /* HaskellSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +110,12 @@
 		EC43D2711FE83AD50046D6B8 = {
 			isa = PBXGroup;
 			children = (
-				EC43D27C1FE83AD50046D6B8 /* AppIconGenerator */,
-				EC43D28F1FE83AD50046D6B8 /* AppIconGeneratorTests */,
-				EC43D29A1FE83AD50046D6B8 /* AppIconGeneratorUITests */,
+				EC43D27C1FE83AD50046D6B8 /* Sources */,
+				EC77BDC61FEAAAF7004E1A43 /* Resources */,
+				EC43D2CE1FE843910046D6B8 /* Frameworks */,
+				EC542DDA1FE99070007D9BDA /* AppIconSetGenerator.entitlements */,
+				EC43D28F1FE83AD50046D6B8 /* Tests */,
+				EC43D29A1FE83AD50046D6B8 /* UITests */,
 				EC43D27B1FE83AD50046D6B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,35 +130,73 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC43D27C1FE83AD50046D6B8 /* AppIconGenerator */ = {
+		EC43D27C1FE83AD50046D6B8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EC77BDD01FEAC176004E1A43 /* Behaviors */,
+				EC77BDCF1FEAC164004E1A43 /* UI */,
 				EC43D27D1FE83AD50046D6B8 /* AppDelegate.swift */,
-				EC43D27F1FE83AD50046D6B8 /* ViewController.swift */,
 				EC43D2811FE83AD50046D6B8 /* Assets.xcassets */,
 				EC43D2831FE83AD50046D6B8 /* Main.storyboard */,
 				EC43D2861FE83AD50046D6B8 /* Info.plist */,
-				EC43D2871FE83AD50046D6B8 /* AppIconGenerator.entitlements */,
 			);
-			path = AppIconGenerator;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		EC43D28F1FE83AD50046D6B8 /* AppIconGeneratorTests */ = {
+		EC43D28F1FE83AD50046D6B8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				EC43D2901FE83AD50046D6B8 /* AppIconGeneratorTests.swift */,
 				EC43D2921FE83AD50046D6B8 /* Info.plist */,
 			);
-			path = AppIconGeneratorTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		EC43D29A1FE83AD50046D6B8 /* AppIconGeneratorUITests */ = {
+		EC43D29A1FE83AD50046D6B8 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
 				EC43D29B1FE83AD50046D6B8 /* AppIconGeneratorUITests.swift */,
 				EC43D29D1FE83AD50046D6B8 /* Info.plist */,
 			);
-			path = AppIconGeneratorUITests;
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		EC43D2CE1FE843910046D6B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC43D2CF1FE843910046D6B8 /* HaskellSwift.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC77BDC61FEAAAF7004E1A43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC542DD81FE98057007D9BDA /* add.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC77BDCF1FEAC164004E1A43 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EC43D27F1FE83AD50046D6B8 /* ViewController.swift */,
+				EC43D2A91FE83F700046D6B8 /* MainView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EC77BDD01FEAC176004E1A43 /* Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				EC542DD61FE96330007D9BDA /* IconGenerator.swift */,
+				EC77BDCD1FEAC06E004E1A43 /* Dragging.swift */,
+				EC77BDC71FEABA11004E1A43 /* Asset.swift */,
+				EC77BDCB1FEABE95004E1A43 /* ImageValidator.swift */,
+				EC77BDC91FEABB75004E1A43 /* ImageConverter.swift */,
+				EC4E3A171FEA5667004AC712 /* ImageMetaData.swift */,
+			);
+			path = Behaviors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +209,7 @@
 				EC43D2761FE83AD50046D6B8 /* Sources */,
 				EC43D2771FE83AD50046D6B8 /* Frameworks */,
 				EC43D2781FE83AD50046D6B8 /* Resources */,
+				EC43D2D31FE8439E0046D6B8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +269,11 @@
 					EC43D2791FE83AD50046D6B8 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					EC43D28B1FE83AD50046D6B8 = {
 						CreatedOnToolsVersion = 9.2;
@@ -231,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC542DD91FE98057007D9BDA /* add.png in Resources */,
 				EC43D2821FE83AD50046D6B8 /* Assets.xcassets in Resources */,
 				EC43D2851FE83AD50046D6B8 /* Main.storyboard in Resources */,
 			);
@@ -257,7 +339,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC77BDCC1FEABE95004E1A43 /* ImageValidator.swift in Sources */,
+				EC77BDC81FEABA11004E1A43 /* Asset.swift in Sources */,
+				EC77BDCA1FEABB75004E1A43 /* ImageConverter.swift in Sources */,
+				EC77BDCE1FEAC06E004E1A43 /* Dragging.swift in Sources */,
 				EC43D2801FE83AD50046D6B8 /* ViewController.swift in Sources */,
+				EC43D2AA1FE83F700046D6B8 /* MainView.swift in Sources */,
+				EC4E3A181FEA5667004AC712 /* ImageMetaData.swift in Sources */,
+				EC542DD71FE96330007D9BDA /* IconGenerator.swift in Sources */,
 				EC43D27E1FE83AD50046D6B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,14 +504,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AppIconGenerator/AppIconGenerator.entitlements;
+				CODE_SIGN_ENTITLEMENTS = AppIconSetGenerator.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NA5BE2D52P;
-				INFOPLIST_FILE = AppIconGenerator/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.AppIconGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -431,14 +527,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AppIconGenerator/AppIconGenerator.entitlements;
+				CODE_SIGN_ENTITLEMENTS = AppIconSetGenerator.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NA5BE2D52P;
-				INFOPLIST_FILE = AppIconGenerator/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.AppIconGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
